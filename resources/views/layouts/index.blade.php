@@ -40,9 +40,9 @@
 </head>
 
 <body>
-    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(59,58,54,0); border-bottom-color: rgba(226,226,226,0);" data-top-bottom="background: rgba(59,58,54,1); border-bottom-color: rgba(226,226,226,1);">
-        @include('contents.header')
-    </header>
+
+    @include('contents.header')
+        
     @include('contents.main')
 
     @include('contents.footer')
