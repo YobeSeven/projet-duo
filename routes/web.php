@@ -24,4 +24,17 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog'); 
+
 Route::get('/portfolio',[ProjetController::class, 'index'])->name('portfolio');
+
+
+Route::get('/admin', function(){
+    return view('admin.index');
+})->name('admin');
+
+Route::get('/admin/blog/add', [BlogController::class, 'create'])->name('addblog');
+
+Route::post('/admin/blog/add2', [BlogController::class, 'addblog'])->name('postaddblog');
+
+Route::get('/admin/portfolio/add',[ProjetController::class, 'create'])->name('addportfolio');
+Route::post('/admin/portfolio/add2',[ProjetController::class, 'afficherprojet'])->name('postaddportfolio');
