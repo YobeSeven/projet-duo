@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ProjetController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,4 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/blog', [BlogController::class, 'index'])->name('blog'); 
+Route::get('/portfolio',[ProjetController::class, 'index'])->name('portfolio');

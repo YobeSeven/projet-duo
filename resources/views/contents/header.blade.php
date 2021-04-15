@@ -20,8 +20,8 @@
                     <li class="{{ request()->path() === 'blog' ? 'active' : ''}}">
                         <a href={{route('blog')}}  >Blog </a>
                     </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>                                
+                    <li class="{{ request()->path() === 'portfolio' ? 'active' : ''}}">
+                        <a href={{route('portfolio')}}>Portfolio</a>                                
                     </li>
                     <li class="{{ request()->path() === 'contact' ? 'active' : ''}}">
                         <a href={{route('contact')}}  >Contact</a>
