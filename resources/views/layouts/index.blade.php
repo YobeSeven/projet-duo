@@ -45,7 +45,10 @@
         
     @include('contents.main')
 
-    @include('contents.footer')
+    @if (!(request()->is('admin/*') || (request()->is('admin'))))
+        @include('contents.footer')
+    @endif
+    
 
 
 

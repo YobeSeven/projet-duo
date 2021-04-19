@@ -8,7 +8,7 @@
 
         <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li class="text-danger">Admin</li>
+            <li class="text-danger"><a href={{route('admin')}}> Admin</a></li>
         </ol><!-- /.breadcrumb -->
 
 
@@ -16,15 +16,16 @@
             <a href={{route('addblog')}}><button class="btn">BLOG + post</button></a> 
 
             <a href={{route('addportfolio')}}><button class="btn">Porfolio + project</button></a> 
-        </div>
-        
 
-        <div>
             <a class="btn" href={{route('allBlog')}}>BLOG - post </a>
+
             <a class="btn" href={{route('allPortfolio')}}>PORTFOLIO - post</a>
+
         </div>
 
     </div>
 
 </section>
+
+
 @endsection
