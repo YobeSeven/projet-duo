@@ -12,10 +12,17 @@
         </ol><!-- /.breadcrumb -->
 
 
-        <a href={{route('addblog')}}><button class="btn">BLOG + post</button></a> 
+        <div>
+            <a href={{route('addblog')}}><button class="btn">BLOG + post</button></a> 
 
-         <a href={{route('addportfolio')}}><button class="btn">Porfolio + project</button></a> 
+            <a href={{route('addportfolio')}}><button class="btn">Porfolio + project</button></a> 
+        </div>
         
+
+        <div>
+            <a class="btn" href={{route('allBlog')}}>BLOG - post </a>
+            <a class="btn" href={{route('allPortfolio')}}>PORTFOLIO - post</a>
+        </div>
 
     </div>
 

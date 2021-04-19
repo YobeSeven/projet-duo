@@ -35,5 +35,15 @@ class BlogController extends Controller
 
         return redirect()->route('admin'); 
     }
+    
+    public function show (){
+        $articles = article::all();
+        return view('admin.blog/all-blog', compact('articles'));
+    }
 
+    public function destroy(article $id){
+
+        $id->delete();
+        return redirect()->route('admin');
+    }
 }

@@ -30,4 +30,12 @@ class ProjetController extends Controller
 
         return redirect()->route('admin'); 
     }
+    public function show(){
+        $projets = projet::all();
+        return view('admin.portfolio.all-portfolio', compact('projets'));
+    }
+    public function destroy(projet $id){
+        $id->delete();
+        return redirect() -> route('admin');
+    }
 }
