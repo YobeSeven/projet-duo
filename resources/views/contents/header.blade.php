@@ -26,6 +26,9 @@
                     <li class="{{ request()->path() === 'contact' ? 'active' : ''}}">
                         <a href={{route('contact')}}  >Contact</a>
                     </li> 
+                    <li class="{{ request()->path() === 'admin' ? 'active' : ''}}">
+                        <a href={{route('admin')}} >admin</a>
+                    </li>
                 </ul><!-- /.navbar-nav -->
             </div><!-- /.navbar-collapse -->
             

@@ -33,7 +33,6 @@ Route::get('/admin', function(){
 })->name('admin');
 
 Route::get('/admin/blog/add', [BlogController::class, 'create'])->name('addblog');
-
 Route::post('/admin/blog/add2', [BlogController::class, 'addblog'])->name('postaddblog');
 
 Route::get('/admin/portfolio/add',[ProjetController::class, 'create'])->name('addportfolio');
