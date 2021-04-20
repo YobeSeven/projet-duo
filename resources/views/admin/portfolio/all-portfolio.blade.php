@@ -12,6 +12,7 @@
                     @csrf
                     <button type="submit" class="btn btn-small btn-yellow">SUPPRIMER</button>
                 </form>
+                <a class="btn bg-danger" href={{route('editPortfolio', $projet->id)}}>EDITER</a>
             </div>
             <hr>
         @endforeach

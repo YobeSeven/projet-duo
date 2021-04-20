@@ -42,8 +42,22 @@ class BlogController extends Controller
     }
 
     public function destroy(article $id){
-
         $id->delete();
+        return redirect()->route('admin');
+    }
+
+    public function edit(article $id){
+        $article = $id;
+        return view('admin.blog.edit-blog', compact('article'));
+    }
+    public function update(article $id, Request $request){
+        $article = $id;
+        $article->titre = $request->titre;
+        $article->imgurl = $request->imgurl;
+        $article->description = $request->desc;
+        
+        $article->save();
+
         return redirect()->route('admin');
     }
 }
