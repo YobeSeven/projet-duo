@@ -7,7 +7,7 @@
 
         <ol class="breadcrumb">
             <li><a href={{route('home')}}>Home</a></li>
-            <li class="text-danger">Admin</li>
+            <li class="text-danger"><a href={{route('admin')}}> Admin</a></li>
             <li>Blog</li>
             <li class="active">Add</li>
         </ol>

@@ -8,7 +8,7 @@
 
         <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li class="text-danger">Admin</li>
+            <li class="text-danger"><a href={{route('admin')}}> Admin</a></li>
         </ol><!-- /.breadcrumb -->
 
 
@@ -27,4 +27,6 @@
     </div>
 
 </section>
+
+
 @endsection
